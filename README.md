@@ -6,7 +6,7 @@ A module which provides a simple way for ensuring singleton in node.
 [![Coverage Status](https://coveralls.io/repos/github/CodeMedic42/single-space/badge.svg?branch=master)](https://coveralls.io/github/CodeMedic42/single-space?branch=master)
 
 
-Code taken and modified gently from
+Code copied and modified gently from
 
 https://derickbailey.com/2016/03/09/creating-a-true-singleton-in-node-js-with-es6-symbols/
 
@@ -14,7 +14,7 @@ Thanks to this developer.
 
 Ussage
 ```js
-const SingleSpace = require('single-space.js');
+const SingleSpace = require('single-space');
 
 module.exports = SingleSpace('module.my.namespace.example', () => {
     function Example(options) {
