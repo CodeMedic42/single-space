@@ -7,7 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/unit",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha test/unit",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -28,9 +30,11 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.11.16",
     "dirty-chai": "^1.2.2",
     "gulp": "^3.9.1",
     "gulp-mocha": "^3.0.1",
+    "istanbul": "^0.4.5",
     "lodash": "^4.17.4",
     "mocha": "^3.2.0"
   }
